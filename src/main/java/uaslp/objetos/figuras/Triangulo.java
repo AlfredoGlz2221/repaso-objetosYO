@@ -1,5 +1,6 @@
 package uaslp.objetos.figuras;
 
+
 public class Triangulo extends Figura
 {
     private double area;

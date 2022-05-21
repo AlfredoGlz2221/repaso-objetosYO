@@ -2,6 +2,7 @@ package uaslp.objetos.figuras;
 
 import java.lang.Math;
 
+
 public class PoligonoRegular extends Figura
 {
     private double area;
