@@ -1,5 +1,8 @@
 package uaslp.objetos.figuras;
 
+import uaslp.objetos.figuras.exception.LadoNoProvistoException;
+import uaslp.objetos.figuras.exception.NumeroInvalidoDeLados;
+
 import java.lang.Math;
 
 
@@ -11,7 +14,13 @@ public class PoligonoRegular extends Figura
 
     public PoligonoRegular(int numeroDeLados)
     {
+        if(numeroDeLados < 5)
+        {
+            throw new NumeroInvalidoDeLados();
+        }
+
         this.numeroDeLado = numeroDeLados;
+
     }
 
     public PoligonoRegular(int numeroDeLados, double lado)

@@ -2,10 +2,12 @@ package uaslp.objetos.figuras;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import uaslp.objetos.figuras.exception.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class Exercise3 {
+public class Exercise3
+{
     // CREA LAS CLASES Y METODOS NECESARIOS PARA QUE EL TEST SE EJECUTE CORRECTAMENTE
 
     // EVITA USAR LOS ATAJOS DEL IDE PARA CREAR CLASES, METODOS Y VARIABLES
@@ -56,7 +58,5 @@ public class Exercise3 {
 
         assertFalse(ex instanceof DatoFaltanteException);
         assertEquals("Número de lados válido a partir de 5", ex.getMessage());
-
     }
-
 }
