@@ -9,20 +9,20 @@ import java.lang.reflect.Modifier;
 import java.time.LocalDate;
 import java.time.Month;
 
-public class Exercise4 {
+public class Exercise4
+{
 
     @Test
     public void testBuilder() {
 
         // Given:
-        Alumno alumno = Alumno.builder()
+        Alumno alumno = new Alumno.builder()
                 .nombre("Pablo Lopez")
                 .clave("1231254")
                 .claveDeCarrera("312542")
                 .anioDeIngreso(2020)
                 .fechaNacimiento(LocalDate.of(2002, Month.APRIL, 12))
                 .build();
-
 
         // Then:
         Assertions.assertEquals("Pablo Lopez", alumno.getNombre());
@@ -52,7 +52,8 @@ public class Exercise4 {
     }
 
     @Test
-    public void testSingleton() {
+    public void testSingleton()
+    {
         // Given:
         Direccion direccion1 = Direccion.getInstance();
         Direccion direccion2 = Direccion.getInstance();
